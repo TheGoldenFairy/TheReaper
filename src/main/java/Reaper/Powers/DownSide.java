@@ -10,8 +10,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class DownSide extends AbstractPower {
 
@@ -29,12 +27,6 @@ public class DownSide extends AbstractPower {
         this.type = AbstractPower.PowerType.DEBUFF;
         this.isTurnBased = true;
         this.isUpgraded = isUpgraded;
-
-        if (!isUpgraded) {
-            this.description = DESCRIPTIONS[0]  + amount + DESCRIPTIONS[1];
-        } else {
-            this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
-        }
         this.updateDescription();
     }
 
@@ -59,9 +51,9 @@ public class DownSide extends AbstractPower {
 
     public void updateDescription() {
         if (!isUpgraded) {
-            this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
         } else {
-            this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
         }
     }
 }

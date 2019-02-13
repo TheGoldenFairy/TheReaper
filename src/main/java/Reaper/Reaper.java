@@ -48,9 +48,9 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
     // Atlas and JSON files for the Animations
     public static final String THE_REAPER_SKELETON_ATLAS = "TheReaperResource/images/characters/skeleton.atlas";
     public static final String THE_REAPER_SKELETON_JSON = "TheReaperResource/images/characters/skeleton.json";
-
     private static final String Assets = "TheReaperResource/images";
 
+    //Making the Reaper Constructor
     public Reaper() {
         BaseMod.subscribe(this);
         System.out.println("Reaper Mod Starting");
@@ -67,6 +67,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         new Reaper();
     }
 
+    //Make the Character
     @Override
     public void receiveEditCharacters() {
         logger.info("Beginning to edit characters. " + "Add " + The_Reaper.Enums.THE_REAPER.toString());
@@ -77,6 +78,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         logger.info("Added " + The_Reaper.Enums.THE_REAPER.toString());
     }
 
+    //Make the Relics
     @Override
     public void receiveEditRelics(){
         logger.info("Adding Reaper relics");
@@ -92,6 +94,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         logger.info("Done Adding Reaper relics");
     }
 
+    //Make the Keywords
     public void receiveEditKeywords(){
         Gson gson = new Gson();
         String json = Gdx.files.internal("TheReaperResource/strings/keyword-strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
@@ -103,6 +106,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         }
     }
 
+    //Receive the Strings
     public void receiveEditStrings(){
         String relicStrings = Gdx.files.internal("TheReaperResource/strings/relic-strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
@@ -111,6 +115,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.loadCustomStringsFile(CardStrings.class, "TheReaperResource/strings/card-strings.json");
     }
 
+    //Make the cards
     @Override
     public void receiveEditCards() {
         logger.info("Adding Reaper Cards");
@@ -164,10 +169,12 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         logger.info("Done Adding Reaper Cards.");
     }
 
+    //Paths
     public static String getResourcePath(String Resource) {
         return Assets + "/" + Resource;
     }
 
+    //Make ID
     public static String makeID(String idText) {
         return "reaper:" + idText;
     }
