@@ -1,0 +1,22 @@
+{
+  "reaper:RosesMark": {
+    "NAME": "Rose's Mark",
+    "FLAVOR": "The True Rose's Mark",
+    "DESCRIPTIONS": ["#yMark_of_Roses heals for 1 additional HP."]
+  },
+  "reaper:ReapersMagic": {
+    "NAME": "Reaper's Magic",
+    "FLAVOR": "The Magical Power of the Reaper at work",
+    "DESCRIPTIONS": ["At the start of combat apply 5 #yDark_Arts to ALL enemies"]
+  },
+  "reaper:AlternateDimension": {
+    "NAME": "Alternate Dimension",
+    "FLAVOR": "Other Dimensions exist!",
+    "DESCRIPTIONS": ["At the start of combat gain 1 #yDark_Dimension"]
+  },
+  "reaper:DeathsScythe": {
+    "NAME": "Death's Scythe",
+    "FLAVOR": "A reapers only weapon",
+    "DESCRIPTIONS": ["At the start of combat apply 1 #yMark_of_Death to ALL enemies"]
+  }
+}

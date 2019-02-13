@@ -1,0 +1,102 @@
+{
+  "reaper:ReaperStrike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "reaper:ReaperDefend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! block."
+  },
+  "reaper:RosePetal": {
+    "NAME": "Rose Petal",
+    "DESCRIPTION": "Apply 1 Mark of Roses."
+  },
+  "reaper:ScytheSlash": {
+    "NAME": "Scythe Slash",
+    "DESCRIPTION":"Deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times."
+  },
+  "reaper:ForbiddenArt": {
+    "NAME": "Forbidden Art",
+    "DESCRIPTION": "Apply !M! Dark_Arts ."
+  },
+  "reaper:WeaknessArts": {
+    "NAME": "Weakness Arts",
+    "DESCRIPTION": "Apply 2 Weak, Vulnerable and !M! Dark_Arts."
+  },
+  "reaper:HealingTouch": {
+    "NAME": "Healing Touch",
+    "DESCRIPTION": "Deal !D! damage. NL Apply 1 Mark of Roses."
+  },
+  "reaper:FearChains": {
+    "NAME": "Fear Chains",
+    "DESCRIPTION": "Deal !D! damage. Draw !M! cards."
+  },
+  "reaper:Blink": {
+    "NAME": "Blink",
+    "DESCRIPTION": "Ethereal. NL Gain 2 Dark_Dimension. ",
+    "UPGRADE_DESCRIPTION": "Gain 2 Dark Dimensions."
+  },
+  "reaper:DarkMagic": {
+    "NAME": "Dark Magic",
+    "DESCRIPTION": "Apply !M! Dark_Arts to a random enemy at the start of your turn."
+  },
+  "reaper:DeathsTornado": {
+    "NAME": "Deaths Tornado",
+    "DESCRIPTION": "Deal !D! damage twice. NL Apply 1 Mark of Blood."
+  },
+  "reaper:IntoShadows": {
+    "NAME": "Into Shadows",
+    "DESCRIPTION": "Deal !D! damage. NL If enemy has Dark_Arts draw !M! cards."
+  },
+  "reaper:SilentSlash":{
+    "NAME": "SilentSlash",
+    "DESCRIPTION": "Deal !D!. NL Gain !B! block."
+  },
+  "reaper:DeathsDoor": {
+    "NAME": "Deaths Door",
+    "DESCRIPTION": "Apply 2 Mark of Death. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Apply 2 Marks of Death."
+  },
+  "reaper:Illusion": {
+    "NAME": "Illusion",
+    "DESCRIPTION": "Gain !B! block and apply 3 Dark_Arts."
+  },
+  "reaper:Hidden": {
+    "NAME": "Hidden",
+    "DESCRIPTION": "Gain !B! block. NL Discard !M! card. NL Next turn, gain !B! block."
+  },
+  "reaper:FastMovement":{
+    "NAME": "Fast Movement",
+    "DESCRIPTION": "Draw 3 cards. NL Next turn gain [E][E]."
+  },
+  "reaper:RoseGarden" : {
+    "NAME": "Rose Garden",
+    "DESCRIPTION": "Apply !M! Marks of Roses and weak to ALL enemies."
+  },
+  "reaper:ClippedWings": {
+    "NAME": "Clipped Wings",
+    "DESCRIPTION": "Apply Slow to ALL enemies. NL Exhaust."
+  },
+  "reaper:ReverseGravity": {
+    "NAME": "Reverse Gravity",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Roses apply 2 vulnerable"
+  },
+  "reaper:BloodyThreads": {
+    "NAME": "Bloody Threads",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Blood apply 2 weak"
+  },
+  "reaper:Cyclone": {
+    "NAME": "Cyclone",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies, !M! times."
+  },
+  "reaper:QuickBlow": {
+    "NAME": "QuickBlow",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "reaper:Stealthy": {
+    "NAME": "Stealthy",
+    "DESCRIPTION": "Draw !M! cards. NL Next turn discard 2 random cards.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Next turn discard 2 cards."
+  }
+}

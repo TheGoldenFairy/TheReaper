@@ -1,0 +1,49 @@
+[
+  {
+    "PROPER NAME":"mark of roses",
+    "NAMES":[
+      "mark of roses",
+      "mark_of_roses",
+      "marks_of_roses"
+    ],
+    "DESCRIPTION":"Whenever an attack deals unblocked damage, heal 1 HP."
+  },
+  {
+    "PROPER NAME":"dark arts",
+    "NAMES":[
+      "dark arts",
+      "dark_arts"
+    ],
+    "DESCRIPTION":"At the end of your turn deal damage equal to the amount of Dark Arts and remove them."
+  },
+  {
+    "PROPER NAME":"dark dimension",
+    "NAMES": [
+      "dark dimension",
+      "dark_dimension",
+      "dark_dimensions"
+    ],
+    "DESCRIPTION":"Attack Damage is reduced by 60%. (Increases reduction by 2% per stack)"
+  },
+  {
+    "PROPER NAME":"mark of blood",
+    "NAMES": [
+      "mark of blood",
+      "mark_of_blood",
+      "marks_of_blood"
+    ],
+    "DESCRIPTION":"On attack lose 3 HP, The next attack played to an enemy deals double damage. (Increases by 0.5 per stack)"
+  },
+  {
+    "PROPER NAME": "mark of death",
+    "NAMES": [
+      "mark of death",
+      "marks_of_death",
+      "mark_of_death"
+    ],
+    "DESCRIPTION":"At the end of the turn, enemy takes 10 damage. (Increases damage by 2 per stack)"
+  }
+]
+
+
+

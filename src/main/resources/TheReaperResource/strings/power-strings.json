@@ -1,0 +1,31 @@
+{
+  "reaper:MarkoftheRose":{
+    "NAME": "Mark of the Rose",
+    "DESCRIPTIONS": ["Whenever an attack deals unblocked damage, heal 1 HP."]
+  },
+  "reaper:DarkArts": {
+    "NAME": "Dark Arts",
+    "DESCRIPTIONS": ["Deal Damage equal to the amount of Dark Arts, lasts 1 turn."]
+  },
+  "reaper:DarkDimension": {
+    "NAME": "Dark Dimension",
+    "DESCRIPTIONS": ["Attack Damage is reduced by 60%. (Increases reduction by 2% per stack)"]
+  },
+  "reaper:MarkofDeath": {
+    "NAME": "Mark of Death",
+    "DESCRIPTIONS": ["At the end of the turn, enemy takes 10 damage. (Increases damage by 2 per stack)"]
+  },
+  "reaper:MarkofBlood": {
+    "NAME": "Mark of Blood",
+    "DESCRIPTIONS" : ["Lose 3 HP, The next attack played on this enemy deals double damage. (Increases by 0.5 per stack)"]
+  },
+  "reaper:DarkMagicPower": {
+    "NAME": "Dark Magic",
+    "DESCRIPTIONS": ["Apply ",
+      " Dark Arts to a random enemy at the start of your turn."]
+  },
+  "reaper:DownSide": {
+    "NAME": "Downside",
+    "DESCRIPTIONS": ["Next turn discard ", " cards at random.", " cards."]
+  }
+}
