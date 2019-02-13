@@ -38,8 +38,8 @@ public class MarkOfTheRose extends AbstractPower {
     @Override
     public void atEndOfRound()
     {
-        if (this.justApplied) {
-            this.justApplied = false;
+        if (justApplied) {
+            justApplied = false;
             return;
         }
         if (this.amount == 0) {
@@ -51,9 +51,11 @@ public class MarkOfTheRose extends AbstractPower {
     }
 
 
-    @Override
     public void stackPower(int stackAmount) {
-        this.amount += stackAmount;
+        super.stackPower(stackAmount);
+        if (amount >= 999) {
+            amount = 999;
+        }
     }
 
     @Override

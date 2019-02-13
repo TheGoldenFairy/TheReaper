@@ -42,12 +42,10 @@ public class MarkofDeath extends AbstractPower {
         }
     }
 
-
-    @Override
     public void stackPower(int stackAmount) {
-        this.amount += stackAmount;
-        if (this.amount <= 0) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
+        super.stackPower(stackAmount);
+        if (amount >= 999) {
+            amount = 999;
         }
     }
 

@@ -51,14 +51,12 @@ public class DarkArts extends AbstractPower implements HealthBarRenderPower {
         return Color.PURPLE;
     }
 
-    @Override
     public void stackPower(int stackAmount) {
-        this.amount += stackAmount;
-        if (this.amount <= 0) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
+        super.stackPower(stackAmount);
+        if (amount >= 999) {
+            amount = 999;
         }
     }
-
     @Override
     public void updateDescription() {
         if (amount >= 1) {

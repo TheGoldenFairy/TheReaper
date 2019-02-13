@@ -40,11 +40,10 @@ public class MarkofBlood extends AbstractPower {
         AbstractDungeon.actionManager.addToBottom(new LoseHPAction(AbstractDungeon.player, AbstractDungeon.player, HP_Loss));
     }
 
-    @Override
     public void stackPower(int stackAmount) {
-        amount += stackAmount;
-        if (amount <= 0) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
+        super.stackPower(stackAmount);
+        if (amount >= 999) {
+            amount = 999;
         }
     }
 

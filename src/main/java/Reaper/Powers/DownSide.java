@@ -41,21 +41,14 @@ public class DownSide extends AbstractPower {
     @Override
     public void atStartOfTurnPostDraw() {
         flash();
-        AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.owner.hb.cX, this.owner.hb.cY, AbstractGameAction.AttackEffect.NONE));
-        if(!isUpgraded) {
-            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DiscardAction(AbstractDungeon.player, AbstractDungeon.player, amount, true));
-        }
-        else {
-            AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DiscardAction(AbstractDungeon.player, AbstractDungeon.player, amount, false));
-        }
+        AbstractDungeon.effectList.add(new FlashAtkImgEffect(owner.hb.cX, owner.hb.cY, AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new com.megacrit.cardcrawl.actions.common.DiscardAction(AbstractDungeon.player, AbstractDungeon.player, amount, true));
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
     }
 
     public void updateDescription() {
         if (!isUpgraded) {
             description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-        } else {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
         }
     }
 }

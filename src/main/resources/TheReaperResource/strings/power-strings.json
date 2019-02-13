@@ -27,7 +27,11 @@
   "reaper:DownSide": {
     "NAME": "Downside",
     "DESCRIPTIONS": ["Next turn discard ",
-      " cards at random.",
+      " cards at random."]
+  },
+  "reaper:DownSideUpgradedPower": {
+    "NAME": "Downside",
+    "DESCRIPTIONS": ["Next turn discard ",
       " cards."]
   }
 }

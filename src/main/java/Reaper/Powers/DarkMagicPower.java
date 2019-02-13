@@ -29,7 +29,7 @@ public class DarkMagicPower extends AbstractPower {
     }
     public void atStartOfTurnPostDraw() {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
-            this.flash();
+            flash();
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new DarkArts(mo, AbstractDungeon.player, amount), amount));
             }
