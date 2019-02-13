@@ -20,7 +20,7 @@ public class DownSideUpgradedPower extends AbstractPower {
     public final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
     private boolean isUpgraded;
 
-    public DownSideUpgradedPower(AbstractCreature owner, int amount, boolean isUpgraded) {
+    public DownSideUpgradedPower(AbstractCreature owner, int amount) {
         this.name = strings.NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -28,7 +28,6 @@ public class DownSideUpgradedPower extends AbstractPower {
         this.amount = amount;
         this.type = AbstractPower.PowerType.DEBUFF;
         this.isTurnBased = true;
-        this.isUpgraded = isUpgraded;
         this.updateDescription();
     }
 
@@ -48,8 +47,6 @@ public class DownSideUpgradedPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        if (!isUpgraded) {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-        }
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 }

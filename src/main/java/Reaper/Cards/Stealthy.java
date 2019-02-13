@@ -2,6 +2,7 @@ package Reaper.Cards;
 
 import Reaper.Patches.AbstractCardEnum;
 import Reaper.Powers.DownSide;
+import Reaper.Powers.DownSideUpgradedPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -38,7 +39,12 @@ public class Stealthy extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, CARD_DRAW));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DownSide(p, DISCARD_CARD, isUpgrade), DISCARD_CARD));
+        if(!upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DownSide(p, DISCARD_CARD), DISCARD_CARD));
+        }
+        else {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DownSideUpgradedPower(p, DISCARD_CARD), DISCARD_CARD));
+        }
     }
 
     @Override
