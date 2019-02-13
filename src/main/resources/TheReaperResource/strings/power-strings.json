@@ -26,6 +26,8 @@
   },
   "reaper:DownSide": {
     "NAME": "Downside",
-    "DESCRIPTIONS": ["Next turn discard ", " cards at random.", " cards."]
+    "DESCRIPTIONS": ["Next turn discard ",
+      " cards at random.",
+      " cards."]
   }
 }

@@ -14,13 +14,15 @@ public class DarkMagicPower extends AbstractPower {
     private static final String POWER_ID = "reaper:DarkMagicPower";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
+
 
     public DarkMagicPower(AbstractCreature owner, int AMT) {
         this.name = strings.NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.img = new Texture(Reaper.getResourcePath(IMG));
-        description = strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
         this.amount = AMT;
         this.updateDescription();
         this.type = AbstractPower.PowerType.BUFF;
@@ -38,7 +40,7 @@ public class DarkMagicPower extends AbstractPower {
     public void updateDescription() {
         if (amount >= 1) {
             {
-                description = strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1];
+                description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
             }
         }
     }

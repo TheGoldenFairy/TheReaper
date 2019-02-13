@@ -16,6 +16,7 @@ public class DownSide extends AbstractPower {
     private static final String POWER_ID = "reaper:DownSide";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
     private boolean isUpgraded;
 
     public DownSide(AbstractCreature owner, int amount, boolean isUpgraded) {
@@ -37,7 +38,8 @@ public class DownSide extends AbstractPower {
         }
     }
 
-    public void atStartOfTurn() {
+    @Override
+    public void atStartOfTurnPostDraw() {
         flash();
         AbstractDungeon.effectList.add(new FlashAtkImgEffect(this.owner.hb.cX, this.owner.hb.cY, AbstractGameAction.AttackEffect.NONE));
         if(!isUpgraded) {
