@@ -134,6 +134,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         //Attacks
         BaseMod.addCard(new ScytheSlash());
         BaseMod.addCard(new HealingTouch());
+        BaseMod.addCard(new HiddenStab());
         //Skills
         BaseMod.addCard(new ForbiddenArt());
         BaseMod.addCard(new WeaknessArts());

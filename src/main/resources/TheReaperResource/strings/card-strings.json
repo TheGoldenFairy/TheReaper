@@ -98,5 +98,9 @@
     "NAME": "Stealthy",
     "DESCRIPTION": "Draw !M! cards. NL Next turn discard 2 random cards.",
     "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Next turn discard 2 cards."
+  },
+  "reaper:HiddenStab": {
+    "NAME": "Hidden Stab",
+    "DESCRIPTION": "Deal !D! damage. NL Whenever you play this card, increase its cost by 1 for this combat."
   }
 }
