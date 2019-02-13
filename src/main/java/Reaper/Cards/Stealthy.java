@@ -28,12 +28,9 @@ public class Stealthy extends CustomCard {
     private static final int CARD_DRAW = 2;
     private static final int DISCARD_CARD = 2;
 
-    private boolean isUpgrade;
-
     public Stealthy() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseMagicNumber = magicNumber = CARD_DRAW;
-        isUpgrade = false;
     }
 
     @Override
@@ -50,7 +47,6 @@ public class Stealthy extends CustomCard {
     @Override
     public void upgrade() {
         if (!upgraded) {
-            isUpgrade = true;
             upgradeName();
             initializeDescription();
         }
