@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import reaper.Reaper;
 
 public class QuickBlow extends CustomCard {
-    public static final String CARD_ID = "reaper:Cyclone";
+    public static final String CARD_ID = "reaper:QuickBlow";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(CARD_ID);
     public static final String IMG = Reaper.CARD_DEFAULT_BETA_ART;
     public static final String NAME = cardStrings.NAME;

@@ -21,7 +21,6 @@ import java.nio.charset.StandardCharsets;
 public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditCharactersSubscriber {
     public static final Logger logger = LogManager.getLogger(Reaper.class.getName());
 
-
     //Card Stuff
     public static final Color REAPER_PURPLE = CardHelper.getColor(102.0f, 51.0f, 153.0f);
 

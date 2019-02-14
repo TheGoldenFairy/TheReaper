@@ -18,6 +18,7 @@ public class Stealthy extends CustomCard {
     public static final String IMG = Reaper.CARD_DEFAULT_BETA_ART;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -44,6 +45,7 @@ public class Stealthy extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

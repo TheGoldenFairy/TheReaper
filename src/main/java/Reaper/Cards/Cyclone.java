@@ -13,7 +13,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 import reaper.Reaper;
 
+
 public class Cyclone extends CustomCard {
+    private static final Logger logger = LogManager.getLogger(Reaper.class.getName());
+
     public static final String CARD_ID = "reaper:Cyclone";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(CARD_ID);
     public static final String IMG = Reaper.CARD_DEFAULT_BETA_ART;
@@ -21,7 +24,7 @@ public class Cyclone extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = AbstractCardEnum.COLOR_PURPLE;
 
@@ -34,7 +37,11 @@ public class Cyclone extends CustomCard {
     public Cyclone() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DMG;
-        baseMagicNumber = magicNumber = TIMES;
+        logger.info("TIMES = " + TIMES);
+        magicNumber = baseMagicNumber = TIMES;
+        logger.info("TIMES2 = " + TIMES);
+        logger.info("magic# = " + magicNumber);
+
         isMultiDamage = true;
     }
 

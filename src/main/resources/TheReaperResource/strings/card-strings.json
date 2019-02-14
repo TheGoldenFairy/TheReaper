@@ -5,7 +5,7 @@
   },
   "reaper:ReaperDefend": {
     "NAME": "Defend",
-    "DESCRIPTION": "Gain !B! block."
+    "DESCRIPTION": "Gain !B! Block."
   },
   "reaper:RosePetal": {
     "NAME": "Rose Petal",
@@ -18,7 +18,7 @@
   },
   "reaper:ForbiddenArt": {
     "NAME": "Forbidden Art",
-    "DESCRIPTION": "Apply !M! Dark_Arts ."
+    "DESCRIPTION": "Apply !M! Dark_Arts."
   },
   "reaper:WeaknessArts": {
     "NAME": "Weakness Arts",
@@ -51,20 +51,20 @@
   },
   "reaper:SilentSlash":{
     "NAME": "SilentSlash",
-    "DESCRIPTION": "Deal !D!. NL Gain !B! block."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block."
   },
   "reaper:DeathsDoor": {
     "NAME": "Deaths Door",
-    "DESCRIPTION": "Gain !B! block. NL Apply 2 Mark of Death. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Gain !B! block. NL Apply 2 Marks of Death."
+    "DESCRIPTION": "Gain !B! Block. NL Apply 2 Mark of Death. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Apply 2 Marks of Death."
   },
   "reaper:Illusion": {
     "NAME": "Illusion",
-    "DESCRIPTION": "Gain !B! block and apply 5 Dark_Arts."
+    "DESCRIPTION": "Gain !B! Block and apply 5 Dark_Arts."
   },
   "reaper:Hidden": {
     "NAME": "Hidden",
-    "DESCRIPTION": "Gain !B! block. NL Discard !M! card. NL Next turn, gain !B! block."
+    "DESCRIPTION": "Gain !B! Block. NL Discard !M! card. NL Next turn, gain !B! Block."
   },
   "reaper:FastMovement":{
     "NAME": "Fast Movement",
@@ -80,11 +80,11 @@
   },
   "reaper:ReverseGravity": {
     "NAME": "Reverse Gravity",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Roses apply 2 vulnerable"
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Roses apply 2 vulnerable."
   },
   "reaper:BloodyThreads": {
     "NAME": "Bloody Threads",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Blood apply 2 weak"
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Blood apply 2 Weak."
   },
   "reaper:Cyclone": {
     "NAME": "Cyclone",
@@ -105,8 +105,8 @@
   },
   "reaper:MadMagic": {
     "NAME": "Mad Magic",
-    "DESCRIPTION": "Triples the amount of Dark_Arts on an enemy",
-    "UPGRADE_DESCRIPTION": "Innate. NL Triples the amount of Dark_Arts on an enemy"
+    "DESCRIPTION": "Triples the amount of Dark_Arts on an enemy.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Triples the amount of Dark_Arts on an enemy."
   },
   "reaper:NaturalBlock": {
     "NAME": "Natural Block",
@@ -114,11 +114,11 @@
   },
   "reaper:Sheath": {
     "NAME": "Sheath",
-    "DESCRIPTION": "Gain !M! dexterity. NL At the end of your turn lose !M! dexterity"
+    "DESCRIPTION": "Gain !M! dexterity. NL At the end of your turn lose !M! dexterity."
   },
   "reaper:DefensiveRose": {
     "NAME": "Defensive Rose",
-    "DESCRIPTION": "Gain !B! block. NL Apply !M! Mark of Roses."
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Mark of Roses."
   },
   "reaper:DeathsMark": {
     "NAME": "Deaths Mark",
@@ -127,10 +127,18 @@
   },
   "reaper:TrueDodge": {
     "NAME": "True Dodge",
-    "DESCRIPTION": "Gain !B! block. Exhaust."
+    "DESCRIPTION": "Gain !B! Block. Exhaust."
   },
   "reaper:CruelSlash": {
     "NAME": "Cruel Slash",
     "DESCRIPTION": "Deal !D! damage. NL Apply 1 Mark of Death."
+  },
+  "reaper:AnotherDimension": {
+    "NAME": "Another Dimension",
+    "DESCRIPTION": "Gain 1 Dark Dimension and lose !M! Dexterity at the start of your turn."
+  },
+  "reaper:ForcedRegion": {
+    "NAME": "Forced Region",
+    "DESCRIPTION": "When ever you take damage, Gain !M! Dexterity."
   }
 }
