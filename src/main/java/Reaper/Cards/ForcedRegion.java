@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class ForcedRegion extends CustomCard {
     public static final String CARD_ID = "reaper:ForcedRegion";
@@ -39,7 +40,8 @@ public class ForcedRegion extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ForcedRegionPower(AbstractDungeon.player, magicNumber), magicNumber));
+        flash();
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ForcedRegionPower(p, magicNumber), magicNumber));
     }
 
     @Override

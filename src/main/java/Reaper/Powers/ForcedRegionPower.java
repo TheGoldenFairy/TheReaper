@@ -29,9 +29,10 @@ public class ForcedRegionPower extends AbstractPower {
     }
 
     @Override
-    public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
+    public int onAttacked(DamageInfo info, int damageAmount) {
+        flash();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, amount), amount));
-        return damage;
+        return damageAmount;
     }
 
     @Override

@@ -29,6 +29,7 @@ public class GrimReaperPower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
+        flash();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, -amount), amount));
     }
 

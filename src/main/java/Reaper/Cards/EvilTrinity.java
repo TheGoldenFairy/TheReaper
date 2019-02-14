@@ -37,7 +37,7 @@ public class EvilTrinity extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new EvilTrinityPower(m, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EvilTrinityPower(m, magicNumber), magicNumber));
     }
 
     @Override

@@ -36,6 +36,7 @@ public class AnotherDimensionPower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
+        flash();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DarkDimension(AbstractDungeon.player, amount), amount));
     }
 

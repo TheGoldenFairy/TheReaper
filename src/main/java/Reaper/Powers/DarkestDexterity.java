@@ -37,6 +37,7 @@ public class DarkestDexterity extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
+        flash();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, amount), amount));
     }
 

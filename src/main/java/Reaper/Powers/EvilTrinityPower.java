@@ -31,6 +31,7 @@ public class EvilTrinityPower extends AbstractPower {
     public void atStartOfTurnPostDraw() {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (!mo.isDeadOrEscaped()) {
+                flash();
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new MarkofBlood(mo, amount*3, amount), amount));
             }
         }
