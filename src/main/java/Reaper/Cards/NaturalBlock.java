@@ -22,7 +22,7 @@ public class NaturalBlock extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = AbstractCardEnum.COLOR_PURPLE;
-    public static final String POWER = "reaper:MarkoftheRose";
+    public static final String POWER = "reaper:DarkArts";
 
     private static final int COST = 1;
     private static final int BLOCK = 6;

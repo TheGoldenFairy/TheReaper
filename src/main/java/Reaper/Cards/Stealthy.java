@@ -18,6 +18,7 @@ public class Stealthy extends CustomCard {
     public static final String IMG = "TheReaperResource/images/cards/attacks/Beta.png";
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
@@ -30,6 +31,7 @@ public class Stealthy extends CustomCard {
 
     public Stealthy() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        baseMagicNumber = magicNumber = CARD_DRAW;
     }
 
     @Override
@@ -47,6 +49,7 @@ public class Stealthy extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
