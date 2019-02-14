@@ -30,7 +30,6 @@ public class Stealthy extends CustomCard {
 
     public Stealthy() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = magicNumber = CARD_DRAW;
     }
 
     @Override

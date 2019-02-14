@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 
 public class ReverseGravity extends CustomCard {
     public static final String CARD_ID = "reaper:ReverseGravity";
@@ -39,7 +40,7 @@ public class ReverseGravity extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         if (m.hasPower(POWER)) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new com.megacrit.cardcrawl.powers.VulnerablePower(m, AMT, false), AMT));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, AMT, false), AMT));
         }
     }
 

@@ -26,8 +26,8 @@ public class WeaknessArts extends CustomCard {
 
     private static final int COST = 2;
     private static final int VANDWAMT = 3;
-    private static final int DAAMT = 3;
-    private static final int DAUPGRADE_AMT = 1;
+    private static final int DAAMT = 5;
+    private static final int DAUPGRADE_AMT = 2;
 
     public WeaknessArts() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -36,9 +36,9 @@ public class WeaknessArts extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new DarkArts(m, p, DAAMT), DAAMT));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, VANDWAMT, false), DAAMT));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, VANDWAMT,false), DAAMT));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new DarkArts(m, p, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, VANDWAMT, false), VANDWAMT));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, VANDWAMT,false), VANDWAMT));
     }
 
     @Override

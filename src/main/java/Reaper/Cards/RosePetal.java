@@ -24,7 +24,7 @@ public class RosePetal extends CustomCard {
 
     private static final int COST = 1;
     public int UPGRADED_COST = 0;
-    public int AMT = 1;
+    public int AMT = 2;
 
     public RosePetal() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

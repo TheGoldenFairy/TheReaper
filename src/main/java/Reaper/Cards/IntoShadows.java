@@ -40,7 +40,7 @@ public class IntoShadows extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         if(m.hasPower(POWER)) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, DRAW_AMT));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
         }
     }
 

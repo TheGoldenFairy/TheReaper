@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.SlowPower;
 
 public class ClippedWings extends CustomCard {
     public static final String CARD_ID = "reaper:ClippedWings";
@@ -34,7 +35,7 @@ public class ClippedWings extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (!mo.isDeadOrEscaped()) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new com.megacrit.cardcrawl.powers.SlowPower(mo, this.magicNumber), magicNumber));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new SlowPower(mo, magicNumber), magicNumber));
             }
         }
     }

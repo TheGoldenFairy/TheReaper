@@ -10,6 +10,7 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -138,6 +139,9 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         //Skills
         BaseMod.addCard(new ForbiddenArt());
         BaseMod.addCard(new WeaknessArts());
+        BaseMod.addCard(new NaturalBlock());
+        BaseMod.addCard(new Sheath());
+        BaseMod.addCard(new DefensiveRose());
 
         //Uncommon Cards
         //Attacks
@@ -159,11 +163,15 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new DeathsTornado());
         BaseMod.addCard(new ReverseGravity());
         BaseMod.addCard(new BloodyThreads());
+        BaseMod.addCard(new CruelSlash());
         //Skills
         BaseMod.addCard(new Blink());
         BaseMod.addCard(new FastMovement());
         BaseMod.addCard(new RoseGarden());
         BaseMod.addCard(new ClippedWings());
+        BaseMod.addCard(new MadMagic());
+        BaseMod.addCard(new DeathsMark());
+        BaseMod.addCard(new TrueDodge());
         //Powers
         BaseMod.addCard(new DarkMagic());
 

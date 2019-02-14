@@ -33,7 +33,7 @@ public class DarkMagic extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DarkMagicPower(p, AMT), AMT));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DarkMagicPower(p, magicNumber), magicNumber));
     }
 
     @Override

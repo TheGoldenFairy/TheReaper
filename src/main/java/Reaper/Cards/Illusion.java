@@ -25,7 +25,7 @@ public class Illusion extends CustomCard {
     private static final int COST = 1;
     private static final int BLOCK = 5;
     private static final int UPGRADE_PLUS_BLOCK = 3;
-    private static final int DA_AMT = 3;
+    private static final int DA_AMT = 7;
 
     public Illusion() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
