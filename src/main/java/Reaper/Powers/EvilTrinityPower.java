@@ -7,26 +7,33 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 
-public class AnotherDimensionUpgradedPower extends AbstractPower {
-    private static final String POWER_ID = "reaper:AnotherDimensionUpgradedPower";
+public class EvilTrinityPower extends AbstractPower {
+    private static final String POWER_ID = "reaper:EvilTrinityPower";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    private static final int DEX_AMT = -1;
-    private static final int AD_AMT = 1;
 
-    public AnotherDimensionUpgradedPower(AbstractCreature owner, int amount) {
+    public EvilTrinityPower(AbstractCreature owner, int amount) {
         this.name = strings.NAME;
         this.ID = POWER_ID;
-        this.description = strings.DESCRIPTIONS[0];
+        this.description = (strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1]);
         this.owner = owner;
         this.img = new Texture(Reaper.getResourcePath(IMG));
         this.amount = amount;
         this.updateDescription();
-        this.type = AbstractPower.PowerType.DEBUFF;
+        this.type = PowerType.BUFF;
         this.isTurnBased = true;
+    }
+
+    @Override
+    public void atStartOfTurnPostDraw() {
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (!mo.isDeadOrEscaped()) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new MarkofBlood(mo, amount*3, amount), amount));
+            }
+        }
     }
 
     @Override
@@ -38,16 +45,10 @@ public class AnotherDimensionUpgradedPower extends AbstractPower {
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DarkDimension(AbstractDungeon.player, AD_AMT), AD_AMT));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, DEX_AMT), DEX_AMT));
-    }
-
-    @Override
     public void updateDescription() {
         if (amount >= 1) {
             {
-                description = (strings.DESCRIPTIONS[0]);
+                description = (strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1]);
             }
         }
     }

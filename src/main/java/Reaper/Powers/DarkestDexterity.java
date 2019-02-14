@@ -2,35 +2,32 @@ package Reaper.Powers;
 
 import Reaper.Reaper;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
+import com.megacrit.cardcrawl.powers.DexterityPower;
 
-public class DownSide extends AbstractPower {
-
-    private static final String POWER_ID = "reaper:DownSide";
+public class DarkestDexterity extends AbstractPower {
+    private static final String POWER_ID = "reaper:DarkestDexterity";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    public final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
-    private boolean isUpgraded;
 
-    public DownSide(AbstractCreature owner, int amount) {
+    public DarkestDexterity(AbstractCreature owner, int amount) {
         this.name = strings.NAME;
         this.ID = POWER_ID;
+        description = (strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1]);
         this.owner = owner;
         this.img = new Texture(Reaper.getResourcePath(IMG));
         this.amount = amount;
+        this.updateDescription();
         this.type = PowerType.BUFF;
         this.isTurnBased = true;
-        this.updateDescription();
     }
 
+    @Override
     public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         if (amount >= 999) {
@@ -40,13 +37,15 @@ public class DownSide extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
-        flash();
-        AbstractDungeon.effectList.add(new FlashAtkImgEffect(owner.hb.cX, owner.hb.cY, AbstractGameAction.AttackEffect.NONE));
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, amount, true));
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, amount), amount));
     }
 
+    @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        if (amount >= 1) {
+            {
+                description = (strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1]);
+            }
+        }
     }
 }

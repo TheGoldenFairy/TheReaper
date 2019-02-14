@@ -171,6 +171,10 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new TrueDodge());
         //Powers
         BaseMod.addCard(new DarkMagic());
+        BaseMod.addCard(new AnotherDimension());
+        BaseMod.addCard(new ForcedRegion());
+        BaseMod.addCard(new EvilTrinity());
+        BaseMod.addCard(new GrimReaper());
 
         logger.info("Done Adding Reaper Cards.");
     }

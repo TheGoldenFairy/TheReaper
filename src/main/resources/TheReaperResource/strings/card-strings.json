@@ -139,6 +139,10 @@
   },
   "reaper:ForcedRegion": {
     "NAME": "Forced Region",
-    "DESCRIPTION": "When ever you take damage, Gain !M! Dexterity."
+    "DESCRIPTION": "When ever you take damage, Gain !M! Strength."
+  },
+  "reaper:EvilTrinity": {
+    "NAME": "Evil Trinity",
+    "DESCRIPTION": "Apply !M! Mark of Blood to ALL enemies at the start of your turn."
   }
 }

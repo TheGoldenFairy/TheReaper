@@ -35,11 +35,23 @@
       " cards."]
   },
   "reaper:AnotherDimensionPower": {
-    "NAME": "Another Dimension",
-    "DESCRIPTION": ["Gain 1 Dark Dimension and lose 2 Dexterity at the start of your turn."]
+    "NAME": "Darkest Dimension",
+    "DESCRIPTION": ["Gain ", " Dark Dimension per stack start of your turn."]
   },
-  "reaper:AnotherDimensionUpgradedPower": {
-    "NAME": "Another Dimension",
-    "DESCRIPTION": ["Gain 1 Dark Dimension and lose 1 Dexterity at the start of your turn."]
+  "reaper:DarkestDexterity": {
+    "NAME": "Darkest Dexterity",
+    "DESCRIPTION": ["Lose ", " Dexterity per stack at the start of your turn."]
+  },
+  "reaper:ForcedRegionPower": {
+    "NAME": "Forced Region",
+    "DESCRIPTION": ["When ever you take damage, Gain ", " Strength."]
+  },
+  "reaper:EvilTrinity": {
+    "NAME": "Evil Trinity",
+    "DESCRIPTION": ["Apply ", " Mark of Blood to ALL enemies at the start of your turn"]
+  },
+  "reaper:GrimReaperPower": {
+    "NAME": "Grim Reaper",
+    "DESCRIPTION": ["Lose ", " Strength per turn."]
   }
 }

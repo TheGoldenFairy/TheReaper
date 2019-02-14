@@ -26,7 +26,7 @@ public class DownSideUpgradedPower extends AbstractPower {
         this.owner = owner;
         this.img = new Texture(Reaper.getResourcePath(IMG));
         this.amount = amount;
-        this.type = AbstractPower.PowerType.DEBUFF;
+        this.type = PowerType.BUFF;
         this.isTurnBased = true;
         this.updateDescription();
     }
