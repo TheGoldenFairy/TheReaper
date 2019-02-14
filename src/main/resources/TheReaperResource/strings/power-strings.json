@@ -33,5 +33,13 @@
     "NAME": "Downside",
     "DESCRIPTIONS": ["Next turn discard ",
       " cards."]
+  },
+  "reaper:AnotherDimensionPower": {
+    "NAME": "Another Dimension",
+    "DESCRIPTION": ["Gain 1 Dark Dimension and lose 2 Dexterity at the start of your turn."]
+  },
+  "reaper:AnotherDimensionUpgradedPower": {
+    "NAME": "Another Dimension",
+    "DESCRIPTION": ["Gain 1 Dark Dimension and lose 1 Dexterity at the start of your turn."]
   }
 }

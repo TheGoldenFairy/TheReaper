@@ -6,11 +6,9 @@ import Reaper.Relics.*;
 import Reaper.Variables.*;
 import Reaper.Patches.*;
 import basemod.BaseMod;
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -21,8 +19,7 @@ import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
 public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditCharactersSubscriber {
-    private static final Logger logger = LogManager.getLogger(Reaper.class.getName());
-
+    public static final Logger logger = LogManager.getLogger(Reaper.class.getName());
 
     //Card Stuff
     public static final Color REAPER_PURPLE = CardHelper.getColor(102.0f, 51.0f, 153.0f);

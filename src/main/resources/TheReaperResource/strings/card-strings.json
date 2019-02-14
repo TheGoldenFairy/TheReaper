@@ -132,5 +132,13 @@
   "reaper:CruelSlash": {
     "NAME": "Cruel Slash",
     "DESCRIPTION": "Deal !D! damage. NL Apply 1 Mark of Death."
+  },
+  "reaper:AnotherDimension": {
+    "NAME": "Another Dimension",
+    "DESCRIPTION": "Gain 1 Dark Dimension and lose !M! Dexterity at the start of your turn."
+  },
+  "reaper:ForcedRegion": {
+    "NAME": "Forced Region",
+    "DESCRIPTION": "When ever you take damage, Gain !M! Dexterity."
   }
 }
