@@ -36,22 +36,27 @@
   },
   "reaper:AnotherDimensionPower": {
     "NAME": "Darkest Dimension",
-    "DESCRIPTION": ["Gain ", " Dark Dimension per stack start of your turn."]
+    "DESCRIPTIONS": ["Gain ",
+      " Dark Dimension per stack start of your turn."]
   },
   "reaper:DarkestDexterity": {
     "NAME": "Darkest Dexterity",
-    "DESCRIPTION": ["Lose ", " Dexterity per stack at the start of your turn."]
+    "DESCRIPTIONS": ["Lose ",
+      " Dexterity per stack at the start of your turn."]
   },
   "reaper:ForcedRegionPower": {
     "NAME": "Forced Region",
-    "DESCRIPTION": ["When ever you take damage, Gain ", " Strength."]
+    "DESCRIPTIONS": ["When ever you take damage, Gain ",
+      " Strength."]
   },
   "reaper:EvilTrinityPower": {
     "NAME": "Evil Trinity",
-    "DESCRIPTION": ["Apply ", " Mark of Blood to ALL enemies at the start of your turn"]
+    "DESCRIPTIONS": ["Apply ",
+      " Mark of Blood to ALL enemies at the start of your turn"]
   },
   "reaper:GrimReaperPower": {
     "NAME": "Grim Reaper",
-    "DESCRIPTION": ["Lose ", " Strength per turn."]
+    "DESCRIPTIONS": ["Lose ",
+      " Strength per turn."]
   }
 }
