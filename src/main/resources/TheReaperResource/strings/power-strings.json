@@ -1,5 +1,5 @@
 {
-  "reaper:MarkoftheRose":{
+  "reaper:MarkOftheRose":{
     "NAME": "Mark of the Rose",
     "DESCRIPTIONS": ["Whenever an attack deals unblocked damage, heal 1 HP."]
   },
@@ -26,12 +26,7 @@
   },
   "reaper:DownSide": {
     "NAME": "Downside",
-    "DESCRIPTIONS": ["Next turn discard ",
-      " cards at random."]
-  },
-  "reaper:DownSideUpgradedPower": {
-    "NAME": "Downside",
-    "DESCRIPTIONS": ["Next turn discard ",
-      " cards."]
+    "DESCRIPTIONS": ["Next turn discard #b",
+      " cards", " at random.", "."]
   }
 }
