@@ -11,11 +11,11 @@
     "NAME": "Dark Dimension",
     "DESCRIPTIONS": ["Attack Damage Taken this turn is reduced by 60%. (Increases reduction by 2% per stack)"]
   },
-  "reaper:MarkofDeath": {
+  "reaper:MarkOfDeath": {
     "NAME": "Mark of Death",
     "DESCRIPTIONS": ["At the end of the every turn, enemy takes 10 damage. (Increases damage by 2 per stack)"]
   },
-  "reaper:MarkofBlood": {
+  "reaper:MarkOfBlood": {
     "NAME": "Mark of Blood",
     "DESCRIPTIONS" : ["Lose 3 HP, The next attack played on this enemy deals double damage. (Increases by 0.5 per stack)"]
   },

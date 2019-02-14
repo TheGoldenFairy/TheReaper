@@ -1,4 +1,4 @@
-package Reaper.Relics;
+package reaper.Relics;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-import Reaper.Powers.DarkArts;
+import reaper.Powers.DarkArts;
 
 public class Reapers_Magic extends AbstractReaperRelic {
     public final static String ID = "reaper:ReapersMagic";

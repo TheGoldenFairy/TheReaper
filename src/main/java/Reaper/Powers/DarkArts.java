@@ -1,4 +1,4 @@
-package Reaper.Powers;
+package reaper.Powers;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import Reaper.Reaper;
+import reaper.Reaper;
 
 public class DarkArts extends AbstractPower implements HealthBarRenderPower {
     private static final String POWER_ID = "reaper:DarkArts";

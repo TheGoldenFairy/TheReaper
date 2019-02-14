@@ -1,10 +1,10 @@
-package Reaper.Variables;
+package reaper.Variables;
 
-import Reaper.Cards.AbstractReaperCard;
+import reaper.Cards.AbstractReaperCard;
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-import static Reaper.Reaper.makeID;
+import static reaper.Reaper.makeID;
 
 public class ReaperSecondMagicNumber extends DynamicVariable {
     @Override

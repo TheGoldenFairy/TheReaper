@@ -1,6 +1,6 @@
-package Reaper.Powers;
+package reaper.Powers;
 
-import Reaper.Reaper;
+import reaper.Reaper;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;

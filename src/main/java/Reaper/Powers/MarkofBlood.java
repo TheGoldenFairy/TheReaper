@@ -1,6 +1,6 @@
-package Reaper.Powers;
+package reaper.Powers;
 
-import Reaper.Reaper;
+import reaper.Reaper;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -15,14 +15,14 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 //The next attack you do gets rid of the power and deals double damage
 //That stacks 0.5F per stack gained
 
-public class MarkofBlood extends AbstractPower {
-    private static final String POWER_ID = "reaper:MarkofBlood";
+public class MarkOfBlood extends AbstractPower {
+    private static final String POWER_ID = "reaper:MarkOfBlood";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static int HP_Loss = 3;
     private static float AMT = 2.0F;
 
-    public MarkofBlood(AbstractCreature owner, int HP_Loss, int amount) {
+    public MarkOfBlood(AbstractCreature owner, int HP_Loss, int amount) {
         this.name = strings.NAME;
         this.ID = POWER_ID;
         this.description = strings.DESCRIPTIONS[0];

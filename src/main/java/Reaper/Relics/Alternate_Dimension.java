@@ -1,11 +1,11 @@
-package Reaper.Relics;
+package reaper.Relics;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
-import Reaper.Powers.DarkDimension;
+import reaper.Powers.DarkDimension;
 
 public class Alternate_Dimension extends AbstractReaperRelic {
 

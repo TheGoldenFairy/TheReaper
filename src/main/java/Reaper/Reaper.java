@@ -1,16 +1,14 @@
-package Reaper;
+package reaper;
 
-import Reaper.Cards.*;
-import Reaper.Character.The_Reaper;
-import Reaper.Relics.*;
-import Reaper.Variables.*;
-import Reaper.Patches.*;
+import reaper.Cards.*;
+import reaper.Character.The_Reaper;
+import reaper.Relics.*;
+import reaper.Variables.*;
+import reaper.Patches.*;
 import basemod.BaseMod;
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -21,7 +19,7 @@ import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
 public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditCharactersSubscriber {
-    private static final Logger logger = LogManager.getLogger(Reaper.class.getName());
+    public static final Logger logger = LogManager.getLogger(Reaper.class.getName());
 
 
     //Card Stuff
@@ -37,6 +35,8 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
     private static final String SKILL_REAPER_PURPLE_PORTRAIT = "TheReaperResource/images/cards/skills/BackgroundPortrait.png";
     private static final String POWER_REAPER_PURPLE_PORTRAIT = "TheReaperResource/images/cards/powers/BackgroundPortrait.png";
     private static final String ENERGY_ORB_REAPER_PURPLE_PORTRAIT = "TheReaperResource/images/cards/OrbPortrait.png";
+
+    public static final String CARD_DEFAULT_BETA_ART = "TheReaperResource/images/cards/attacks/Beta.png";
 
     //Character images
     private static final String THE_REAPER_BUTTON = "TheReaperResource/images/charselect/ReaperCharacterButton.png";

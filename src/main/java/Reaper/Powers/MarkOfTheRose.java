@@ -1,4 +1,4 @@
-package Reaper.Powers;
+package reaper.Powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
@@ -11,10 +11,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-import Reaper.Reaper;
+import reaper.Reaper;
 
 public class MarkOfTheRose extends AbstractPower {
-    private static final String POWER_ID = "reaper:MarkoftheRose";
+    private static final String POWER_ID = "reaper:MarkOftheRose";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static int AMT = 1;

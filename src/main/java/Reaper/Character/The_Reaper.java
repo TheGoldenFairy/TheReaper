@@ -1,8 +1,8 @@
-package Reaper.Character;
+package reaper.Character;
 
-import Reaper.Cards.*;
-import Reaper.Reaper;
-import Reaper.Relics.*;
+import reaper.Cards.*;
+import reaper.Reaper;
+import reaper.Relics.*;
 import basemod.abstracts.CustomPlayer;
 import basemod.animations.SpriterAnimation;
 import com.badlogic.gdx.graphics.Color;
@@ -27,11 +27,11 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import java.util.ArrayList;
 
-import static Reaper.Patches.AbstractCardEnum.COLOR_PURPLE;
-import static Reaper.Reaper.*;
+import static reaper.Patches.AbstractCardEnum.COLOR_PURPLE;
+import static reaper.Reaper.*;
 
 public class The_Reaper extends CustomPlayer {
-    public static final Logger logger = LogManager.getLogger(Reaper.class.getName());
+
     public static class Enums {
         @SpireEnum
         public static AbstractPlayer.PlayerClass THE_REAPER;
@@ -109,7 +109,7 @@ public class The_Reaper extends CustomPlayer {
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        logger.info("Begin loading starter Deck Strings");
+        Reaper.logger.info("Begin loading starter Deck Strings");
 
         retVal.add(ReaperStrike.CARD_ID);
         retVal.add(ReaperStrike.CARD_ID);

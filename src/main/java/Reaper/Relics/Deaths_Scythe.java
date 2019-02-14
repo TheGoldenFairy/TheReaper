@@ -1,7 +1,6 @@
-package Reaper.Relics;
+package reaper.Relics;
 
-import Reaper.Powers.DarkDimension;
-import Reaper.Powers.MarkofDeath;
+import reaper.Powers.MarkOfDeath;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -29,7 +28,7 @@ public class Deaths_Scythe extends AbstractReaperRelic {
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
             if (!mo.isDeadOrEscaped()) {
                 AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new MarkofDeath(mo, p, AMT), AMT));
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, p, new MarkOfDeath(mo, p, AMT), AMT));
             }
         }
     }
