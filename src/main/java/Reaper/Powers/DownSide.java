@@ -18,7 +18,6 @@ public class DownSide extends AbstractPower {
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
-    private boolean isUpgraded;
 
     public DownSide(AbstractCreature owner, int amount) {
         this.name = strings.NAME;

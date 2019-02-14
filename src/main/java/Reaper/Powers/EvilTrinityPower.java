@@ -14,11 +14,11 @@ public class EvilTrinityPower extends AbstractPower {
     private static final String POWER_ID = "reaper:EvilTrinityPower";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
 
     public EvilTrinityPower(AbstractCreature owner, int amount) {
         this.name = strings.NAME;
         this.ID = POWER_ID;
-        this.description = (strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1]);
         this.owner = owner;
         this.img = new Texture(Reaper.getResourcePath(IMG));
         this.amount = amount;
@@ -44,12 +44,8 @@ public class EvilTrinityPower extends AbstractPower {
         }
     }
 
-    @Override
     public void updateDescription() {
-        if (amount >= 1) {
-            {
-                description = (strings.DESCRIPTIONS[0] + amount + strings.DESCRIPTIONS[1]);
-            }
-        }
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
+
 }

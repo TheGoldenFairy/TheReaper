@@ -46,7 +46,7 @@
     "NAME": "Forced Region",
     "DESCRIPTION": ["When ever you take damage, Gain ", " Strength."]
   },
-  "reaper:EvilTrinity": {
+  "reaper:EvilTrinityPower": {
     "NAME": "Evil Trinity",
     "DESCRIPTION": ["Apply ", " Mark of Blood to ALL enemies at the start of your turn"]
   },
