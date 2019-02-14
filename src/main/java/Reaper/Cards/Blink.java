@@ -1,7 +1,8 @@
-package Reaper.Cards;
+package reaper.Cards;
 
-import Reaper.Patches.AbstractCardEnum;
-import Reaper.Powers.DarkDimension;
+import reaper.Patches.AbstractCardEnum;
+import reaper.Powers.DarkDimension;
+import reaper.Reaper;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -13,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Blink extends CustomCard {
     public static final String CARD_ID = "reaper:Blink";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(CARD_ID);
-    public static final String IMG = "TheReaperResource/images/cards/attacks/Beta.png";
+    public static final String IMG = Reaper.CARD_DEFAULT_BETA_ART;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;

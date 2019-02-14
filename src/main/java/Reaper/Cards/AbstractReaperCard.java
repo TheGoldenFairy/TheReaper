@@ -1,4 +1,4 @@
-package Reaper.Cards;
+package reaper.Cards;
 
 import basemod.abstracts.CustomCard;
 

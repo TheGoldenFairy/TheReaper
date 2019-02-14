@@ -1,6 +1,6 @@
-package Reaper.Relics;
+package reaper.Relics;
 
-import Reaper.Powers.MarkOfTheRose;
+import reaper.Powers.MarkOfTheRose;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class Roses_Mark extends AbstractReaperRelic {

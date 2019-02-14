@@ -1,10 +1,10 @@
-package Reaper;
+package reaper;
 
-import Reaper.Cards.*;
-import Reaper.Character.The_Reaper;
-import Reaper.Relics.*;
-import Reaper.Variables.*;
-import Reaper.Patches.*;
+import reaper.Cards.*;
+import reaper.Character.The_Reaper;
+import reaper.Relics.*;
+import reaper.Variables.*;
+import reaper.Patches.*;
 import basemod.BaseMod;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -34,6 +34,8 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
     private static final String SKILL_REAPER_PURPLE_PORTRAIT = "TheReaperResource/images/cards/skills/BackgroundPortrait.png";
     private static final String POWER_REAPER_PURPLE_PORTRAIT = "TheReaperResource/images/cards/powers/BackgroundPortrait.png";
     private static final String ENERGY_ORB_REAPER_PURPLE_PORTRAIT = "TheReaperResource/images/cards/OrbPortrait.png";
+
+    public static final String CARD_DEFAULT_BETA_ART = "TheReaperResource/images/cards/attacks/Beta.png";
 
     //Character images
     private static final String THE_REAPER_BUTTON = "TheReaperResource/images/charselect/ReaperCharacterButton.png";

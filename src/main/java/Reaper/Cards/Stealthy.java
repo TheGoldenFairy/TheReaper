@@ -1,8 +1,7 @@
-package Reaper.Cards;
+package reaper.Cards;
 
-import Reaper.Patches.AbstractCardEnum;
-import Reaper.Powers.DownSide;
-import Reaper.Powers.DownSideUpgradedPower;
+import reaper.Patches.AbstractCardEnum;
+import reaper.Powers.DownSide;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -11,11 +10,12 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import reaper.Reaper;
 
 public class Stealthy extends CustomCard {
     public static final String CARD_ID = "reaper:Stealthy";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(CARD_ID);
-    public static final String IMG = "TheReaperResource/images/cards/attacks/Beta.png";
+    public static final String IMG = Reaper.CARD_DEFAULT_BETA_ART;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -37,12 +37,8 @@ public class Stealthy extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, CARD_DRAW));
-        if(!upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DownSide(p, DISCARD_CARD), DISCARD_CARD));
-        }
-        else {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DownSideUpgradedPower(p, DISCARD_CARD), DISCARD_CARD));
-        }
+
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DownSide(p, DISCARD_CARD, !upgraded), DISCARD_CARD));
     }
 
     @Override

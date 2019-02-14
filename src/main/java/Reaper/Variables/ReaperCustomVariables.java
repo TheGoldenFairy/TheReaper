@@ -1,10 +1,10 @@
-package Reaper.Variables;
+package reaper.Variables;
 
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
-import static Reaper.Reaper.makeID;
+import static reaper.Reaper.makeID;
 
 public class ReaperCustomVariables extends DynamicVariable {
 
