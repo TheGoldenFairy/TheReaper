@@ -1,20 +1,23 @@
 package Reaper.Cards;
 
 import Reaper.Patches.AbstractCardEnum;
+import Reaper.Reaper;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Cyclone extends CustomCard {
+    private static final Logger logger = LogManager.getLogger(Reaper.class.getName());
+
     public static final String CARD_ID = "reaper:Cyclone";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(CARD_ID);
     public static final String IMG = "TheReaperResource/images/cards/attacks/Beta.png";
@@ -35,7 +38,11 @@ public class Cyclone extends CustomCard {
     public Cyclone() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DMG;
-        baseMagicNumber = magicNumber = TIMES;
+        logger.info("TIMES = " + TIMES);
+        magicNumber = baseMagicNumber = TIMES;
+        logger.info("TIMES2 = " + TIMES);
+        logger.info("magic# = " + magicNumber);
+
         isMultiDamage = true;
     }
 

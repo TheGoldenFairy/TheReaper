@@ -1,7 +1,6 @@
 package Reaper.Cards;
 
 import Reaper.Patches.AbstractCardEnum;
-import Reaper.Powers.MarkOfTheRose;
 import Reaper.Powers.MarkofDeath;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;

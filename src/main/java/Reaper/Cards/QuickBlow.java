@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
 public class QuickBlow extends CustomCard {
-    public static final String CARD_ID = "reaper:Cyclone";
+    public static final String CARD_ID = "reaper:QuickBlow";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(CARD_ID);
     public static final String IMG = "TheReaperResource/images/cards/attacks/Beta.png";
     public static final String NAME = cardStrings.NAME;
