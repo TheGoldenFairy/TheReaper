@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 
 public class GrimReaper extends CustomCard {
     public static final String CARD_ID = "reaper:GrimReaper";
@@ -25,6 +26,7 @@ public class GrimReaper extends CustomCard {
     private static final int COST = 1;
     private static final int AMT = 4;
     private static final int UPGRADE_AMT = 1;
+    private static final int GR_AMT = 1;
 
     public GrimReaper() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -33,7 +35,8 @@ public class GrimReaper extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new GrimReaperPower(m, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new StrengthPower(m, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new GrimReaperPower(m, GR_AMT), GR_AMT));
     }
 
     @Override

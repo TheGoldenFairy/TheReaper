@@ -144,5 +144,9 @@
   "reaper:EvilTrinity": {
     "NAME": "Evil Trinity",
     "DESCRIPTION": "Apply !M! Mark of Blood to ALL enemies at the start of your turn."
+  },
+  "reaper:GrimReaper": {
+    "NAME": "Grim Reaper",
+    "DESCRIPTION": "Gain !M! Strength and lose 1 Strength per turn."
   }
 }
