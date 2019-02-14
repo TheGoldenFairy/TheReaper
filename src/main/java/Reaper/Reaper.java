@@ -175,6 +175,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new ForcedRegion());
         BaseMod.addCard(new EvilTrinity());
         BaseMod.addCard(new GrimReaper());
+        BaseMod.addCard(new VeilofDeath());
 
         logger.info("Done Adding Reaper Cards.");
     }

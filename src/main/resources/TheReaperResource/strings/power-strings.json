@@ -58,5 +58,10 @@
     "NAME": "Grim Reaper",
     "DESCRIPTIONS": ["Lose ",
       " Strength per turn."]
+  },
+  "reaper:VeilofDeathPower": {
+    "NAME": "Veil of Death",
+    "DESCRIPTIONS": ["Whenever you are attacked, deal ",
+      " Damage to the attacker."]
   }
 }

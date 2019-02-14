@@ -148,5 +148,9 @@
   "reaper:GrimReaper": {
     "NAME": "Grim Reaper",
     "DESCRIPTION": "Gain !M! Strength and lose 1 Strength per turn."
+  },
+  "reaper:VeilofDeath": {
+    "NAME": "Veil of Death",
+    "DESCRIPTION": "Whenever you are attacked, deal !M! Damage to the attacker."
   }
 }
