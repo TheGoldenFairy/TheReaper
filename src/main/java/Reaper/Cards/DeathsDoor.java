@@ -48,6 +48,7 @@ public class DeathsDoor extends CustomCard {
             upgradeName();
             upgradeBaseCost(UPGRADED_COST);
             rawDescription = UPGRADE_DESCRIPTION;
+            exhaust = false;
             initializeDescription();
         }
     }

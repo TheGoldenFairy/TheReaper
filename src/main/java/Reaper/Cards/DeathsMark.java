@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class DeathsMark extends CustomCard {
-    public static final String CARD_ID = "reaper:RosePetal";
+    public static final String CARD_ID = "reaper:DeathsMark";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(CARD_ID);
     public static final String IMG = "TheReaperResource/images/cards/skills/Beta.png";
     public static final String NAME = cardStrings.NAME;

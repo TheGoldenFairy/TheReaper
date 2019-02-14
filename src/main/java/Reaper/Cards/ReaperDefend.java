@@ -34,7 +34,7 @@ public class ReaperDefend extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, BLOCK));
     }
 
     @Override

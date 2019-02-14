@@ -23,7 +23,7 @@ public class ForbiddenArt extends CustomCard {
     public static final CardColor COLOR = AbstractCardEnum.COLOR_PURPLE;
 
     private static final int COST = 1;
-    private static final int AMT = 5;
+    private static final int AMT = 7;
     private static final int UPGRADE_AMT = 2;
 
     public ForbiddenArt() {
