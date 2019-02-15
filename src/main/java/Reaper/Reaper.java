@@ -153,6 +153,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new Evasion());
         BaseMod.addCard(new MagicFight());
         BaseMod.addCard(new UnknownSight());
+        BaseMod.addCard(new HiddenStrength());
 
         //Uncommon Cards
         //Attacks
