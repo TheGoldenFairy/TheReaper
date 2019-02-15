@@ -80,7 +80,7 @@
   },
   "reaper:ReverseGravity": {
     "NAME": "Reverse Gravity",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Roses apply 2 vulnerable."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Roses apply 2 Vulnerable."
   },
   "reaper:BloodyThreads": {
     "NAME": "Bloody Threads",
@@ -152,5 +152,44 @@
   "reaper:VeilofDeath": {
     "NAME": "Veil of Death",
     "DESCRIPTION": "Whenever you are attacked, deal !M! Damage to the attacker."
+  },
+  "reaper:QuickHand": {
+    "NAME": "Quick Hand",
+    "DESCRIPTION": "Deal !D! damage. NL Discard !M! cards."
+  },
+  "reaper:FastArts": {
+    "NAME": "Fast Arts",
+    "DESCRIPTION": "Deal !D! damage twice. NL Apply !M! Dark_Arts."
+  },
+  "reaper:SwiftStrike": {
+    "NAME": "Swift Strike",
+    "DESCRIPTION": "Deal !D! damage. Draw !M! cards. Exhaust."
+  },
+  "reaper:BackTurned": {
+    "NAME": "Back Turned",
+    "DESCRIPTION": "Deal !D! damage. NL Return a card from your discard pile to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Return a card from your discard pile to your hand."
+  },
+  "reaper:SilentBonk": {
+    "NAME": "Silent Bonk",
+    "DESCRIPTION": "Can only be played if the discard piles empty. NL Deal !D! Damage.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Can only be played if the discard piles empty. NL Deal !D! Damage."
+  },
+  "reaper:BlockingGlaze": {
+    "NAME": "Blocking Glaze",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Block. NL Apply !M! Block."
+  },
+  "reaper:InsaneReaper": {
+    "NAME": "Insane Reaper",
+    "DESCRIPTION": "Lose 3 HP. NL Gain [E][E] NL Exhaust.",
+    "UPGRADE_DESCRIPTION" : "Lose 3 HP. Gain [E][E][E]. NL Exhaust."
+  },
+  "reaper:BurningFight": {
+    "NAME": "Magic Fight",
+    "DESCRIPTION": "Apply 2 Mark of Roses. If the enemy has Dark_Arts, Apply an additional Mark of Roses"
+  },
+  "reaper:Evasion": {
+    "NAME": "Evasion",
+    "DESCRIPTION": "Gain !B! block X times. NL Apply X-1 weak."
   }
 }
