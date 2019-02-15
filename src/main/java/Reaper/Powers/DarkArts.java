@@ -16,7 +16,7 @@ import Reaper.Reaper;
 
 public class DarkArts extends AbstractPower implements HealthBarRenderPower {
     private static final String POWER_ID = "reaper:DarkArts";
-    private static final String IMG = "powers/BetaPower.png";
+    private static final String IMG = "powers/DarkArts.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private AbstractCreature source;
 

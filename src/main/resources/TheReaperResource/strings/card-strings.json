@@ -181,8 +181,8 @@
   },
   "reaper:InsaneReaper": {
     "NAME": "Insane Reaper",
-    "DESCRIPTION": "Lose 3 HP. NL Gain [E][E] NL Exhaust.",
-    "UPGRADE_DESCRIPTION" : "Lose 3 HP. Gain [E][E][E]. NL Exhaust."
+    "DESCRIPTION": "Lose 3 HP. NL Gain [E] [E] NL Exhaust.",
+    "UPGRADE_DESCRIPTION" : "Lose 3 HP. Gain [E] [E] [E]. NL Exhaust."
   },
   "reaper:BurningFight": {
     "NAME": "Magic Fight",

@@ -35,7 +35,7 @@ public class MarkofDeath extends AbstractPower {
     public void atStartOfTurn() {
         if(amount > 0) {
             if(amount > 1) {
-                AMT = 2 + ((amount - 1) * 2 );
+                AMT = 10 + ((amount - 1) * 2 );
             }
             AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner, new DamageInfo(source, AMT, DamageInfo.DamageType.THORNS)));
         }

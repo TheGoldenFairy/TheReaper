@@ -15,7 +15,7 @@ import Reaper.Reaper;
 
 public class MarkOfTheRose extends AbstractPower {
     private static final String POWER_ID = "reaper:MarkoftheRose";
-    private static final String IMG = "powers/BetaPower.png";
+    private static final String IMG = "powers/MarkofRoses.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static int AMT = 1;
     private boolean justApplied = false;
