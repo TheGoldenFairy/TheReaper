@@ -28,10 +28,12 @@ public class TheFuture extends CustomCard {
     private static final int COST = -2;
     private static final int DAMAGE = 3;
     private static final int UPGRADE_PLUS_DMG = 1;
+    private static final int TIMES = 2;
 
     public TheFuture() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = TIMES;
     }
 
     @Override

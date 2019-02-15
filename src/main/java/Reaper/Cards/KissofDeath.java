@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
 public class KissofDeath extends CustomCard {
-    public static final String CARD_ID = "reaper:KissofDeath";
+    public static final String CARD_ID = "reaper:KissOfDeath";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(CARD_ID);
     public static final String IMG = "TheReaperResource/images/cards/skills/Beta.png";
     public static final String NAME = cardStrings.NAME;

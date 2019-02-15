@@ -26,7 +26,7 @@ public class PureDarkArts extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = AbstractCardEnum.COLOR_PURPLE;
 
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int AMT = 15;
     private static final int UPGRADE_AMT = 5;
     private static final int W_AMT = 2;

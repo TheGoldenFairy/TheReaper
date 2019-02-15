@@ -60,7 +60,7 @@
   },
   "reaper:Illusion": {
     "NAME": "Illusion",
-    "DESCRIPTION": "Gain !B! Block. NL apply 5 Dark_Arts."
+    "DESCRIPTION": "Gain !B! Block. NL Apply 5 Dark_Arts."
   },
   "reaper:Hidden": {
     "NAME": "Hidden",
@@ -184,7 +184,7 @@
     "DESCRIPTION": "Lose 3 HP. NL Gain [E] [E] NL Exhaust.",
     "UPGRADE_DESCRIPTION" : "Lose 3 HP. Gain [E] [E] [E]. NL Exhaust."
   },
-  "reaper:BurningFight": {
+  "reaper:MagicFight": {
     "NAME": "Magic Fight",
     "DESCRIPTION": "Apply 2 Mark of Roses. If the enemy has Dark_Arts, Apply an additional Mark of Roses"
   },
@@ -250,7 +250,7 @@
   },
   "reaper:Stab": {
     "NAME": "Stab",
-    "DESCRIPTIONS": "When Drawn Deal !M! damage. NL Deal !D! damage."
+    "DESCRIPTION": "When Drawn Deal !M! damage. NL Deal !D! damage."
   },
   "reaper:MagicalBlock": {
     "NAME": "Magical Block",

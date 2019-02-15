@@ -31,6 +31,7 @@ public class StabbingDagger extends CustomCard {
 
     public StabbingDagger() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        magicNumber = baseMagicNumber = AMT;
         baseBlock = BLOCK;
     }
 

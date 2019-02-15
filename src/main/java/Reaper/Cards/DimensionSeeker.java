@@ -34,7 +34,7 @@ public class DimensionSeeker extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new DarkDimension(m, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DarkDimension(p, magicNumber), magicNumber));
     }
 
     @Override

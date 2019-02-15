@@ -25,7 +25,7 @@ public class IntoShadows extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = AbstractCardEnum.COLOR_PURPLE;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int DAMAGE = 5;
     private static final int DRAW_AMT = 2;
     private static final int DRAW_UPGRADE_AMT = 1;
