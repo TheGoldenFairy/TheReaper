@@ -42,6 +42,15 @@
       "mark_of_death"
     ],
     "DESCRIPTION":"At the end of the turn, enemy takes 10 damage. (Increases damage by 2 per stack)"
+  },
+  {
+    "NAMES": [
+      "stab",
+      "stabs",
+      "Stabs",
+      "Stab"
+    ],
+    "DESCRIPTION":"Stabs are 0 cost attack cards."
   }
 ]
 

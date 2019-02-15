@@ -9,6 +9,7 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -18,7 +19,8 @@ import org.apache.logging.log4j.Logger;
 import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
-public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber, EditKeywordsSubscriber, EditCharactersSubscriber {
+public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditStringsSubscriber,
+        EditKeywordsSubscriber, EditCharactersSubscriber {
     public static final Logger logger = LogManager.getLogger(Reaper.class.getName());
 
     //Card Stuff
@@ -138,6 +140,9 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new SwiftStrike());
         BaseMod.addCard(new BackTurned());
         BaseMod.addCard(new SilentBonk());
+        BaseMod.addCard(new BlockingGlaze());
+        BaseMod.addCard(new Stab());
+        BaseMod.addCard(new TheFuture());
         //Skills
         BaseMod.addCard(new ForbiddenArt());
         BaseMod.addCard(new WeaknessArts());
@@ -146,6 +151,8 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new DefensiveRose());
         BaseMod.addCard(new InsaneReaper());
         BaseMod.addCard(new Evasion());
+        BaseMod.addCard(new MagicFight());
+        BaseMod.addCard(new UnknownSight());
 
         //Uncommon Cards
         //Attacks
@@ -153,13 +160,38 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new SilentSlash());
         BaseMod.addCard(new Cyclone());
         BaseMod.addCard(new QuickBlow());
+        BaseMod.addCard(new KissofDeath());
+        BaseMod.addCard(new CurseofDeath());
+        BaseMod.addCard(new StrikingBlow());
+        BaseMod.addCard(new BleedingEffect());
+        BaseMod.addCard(new StolenAttack());
+        BaseMod.addCard(new SpinningBlow());
+        BaseMod.addCard(new MarkofHeart());
+        BaseMod.addCard(new SlyStrike());
         //Skills
         BaseMod.addCard(new DeathsDoor());
         BaseMod.addCard(new Illusion());
         BaseMod.addCard(new Hidden());
         BaseMod.addCard(new Stealthy());
         BaseMod.addCard(new RoseGarden());
+        BaseMod.addCard(new DimensionSeeker());
+        BaseMod.addCard(new InvisibleCloak());
+        BaseMod.addCard(new MagicalBlock());
+        BaseMod.addCard(new BloodStain());
+        BaseMod.addCard(new GearingUp());
+        BaseMod.addCard(new ExhaustiveOption());
+        BaseMod.addCard(new StabbingDagger());
+        BaseMod.addCard(new PureDarkArts());
+        BaseMod.addCard(new ShieldBreak());
+        BaseMod.addCard(new SecretRose());
+        BaseMod.addCard(new SecretMagic());
         //Powers
+        BaseMod.addCard(new PureDarkness());
+        BaseMod.addCard(new DevilsStrength());
+        BaseMod.addCard(new DevilsDefense());
+        BaseMod.addCard(new CardSlash());
+        BaseMod.addCard(new Inevitable());
+        BaseMod.addCard(new VirtuousReaper());
 
 
         //RareCards
@@ -176,6 +208,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new MadMagic());
         BaseMod.addCard(new DeathsMark());
         BaseMod.addCard(new TrueDodge());
+        BaseMod.addCard(new LovelyReaper());
         //Powers
         BaseMod.addCard(new DarkMagic());
         BaseMod.addCard(new AnotherDimension());

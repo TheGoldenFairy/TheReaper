@@ -60,7 +60,7 @@
   },
   "reaper:Illusion": {
     "NAME": "Illusion",
-    "DESCRIPTION": "Gain !B! Block and apply 5 Dark_Arts."
+    "DESCRIPTION": "Gain !B! Block. NL apply 5 Dark_Arts."
   },
   "reaper:Hidden": {
     "NAME": "Hidden",
@@ -177,7 +177,7 @@
   },
   "reaper:BlockingGlaze": {
     "NAME": "Blocking Glaze",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Block. NL Apply !M! Block."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Block. NL Apply !M! Dark_Arts."
   },
   "reaper:InsaneReaper": {
     "NAME": "Insane Reaper",
@@ -191,5 +191,126 @@
   "reaper:Evasion": {
     "NAME": "Evasion",
     "DESCRIPTION": "Gain !B! block X times. NL Apply X-1 weak."
+  },
+  "reaper:PureDarkness": {
+    "NAME": "Pure Darkness",
+    "DESCRIPTION": "Apply !M! Dark_Arts every time you play a card."
+  },
+  "reaper:DevilsStrength": {
+    "NAME": "Devils Strength",
+    "DESCRIPTION": "Gain !M! Strength every time you only play attack cards in a turn."
+  },
+  "reaper:DevilsDefense": {
+    "NAME": "Devils Defense",
+    "DESCRIPTION": "Gain !M! Dexterity every time you only play skill cards in a turn."
+  },
+  "reaper:CardSlash": {
+    "NAME": "Card Slash",
+    "DESCRIPTION": "At the start of your turn Draw !M! cards. NL Discard !M! cards."
+  },
+  "reaper:KissOfDeath": {
+    "NAME": "Kiss of Death",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Apply !M! Mark of Roses to ALL enemies."
+  },
+  "reaper:BleedingEffect": {
+    "NAME": "Bleeding Effect",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
+  "reaper:StolenAttack": {
+    "NAME": "Stolen Attack",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
+  "reaper:CurseofDeath": {
+    "NAME": "Curse of Death",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Death Deal an additional !D! Damage."
+  },
+  "reaper:StrikingBlow": {
+    "NAME": "Striking Blow",
+    "DESCRIPTION": "Deal !D! damage. NL If it doesn't kill an enemy lose all energy."
+  },
+  "reaper:DimensionSeeker": {
+    "NAME": "Dimension Seeker",
+    "DESCRIPTION": "Ethereal. NL Gain !M! Dark Dimension. NL Exhaust."
+  },
+  "reaper:InvisibleCloak": {
+    "NAME": "Invisible Cloak",
+    "DESCRIPTION": "Gain !B!."
+  },
+  "reaper:SpinningBlow": {
+    "NAME": "Spinning Blow",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies twice."
+  },
+  "reaper:MarkofHeart": {
+    "NAME": "Mark of Heart",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Mark of Roses Draw !M! card."
+  },
+  "reaper:LovelyReaper": {
+    "NAME": "Lovely Reaper",
+    "DESCRIPTION": "Apply !M! Mark of Roses to ALL enemies."
+  },
+  "reaper:Stab": {
+    "NAME": "Stab",
+    "DESCRIPTIONS": "When Drawn Deal !M! damage. NL Deal !D! damage."
+  },
+  "reaper:MagicalBlock": {
+    "NAME": "Magical Block",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Mark of Blood."
+  },
+  "reaper:BloodStain": {
+    "NAME": "Blood Stain",
+    "DESCRIPTION": "Apply !M! Mark of Blood. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Mark of Blood."
+  },
+  "reaper:GearingUp": {
+    "NAME": "Gearing Up",
+    "DESCRIPTION": "Gain [E] [E]."
+  },
+  "reaper:ExhaustiveOption": {
+    "NAME": "ExhaustiveOption",
+    "DESCRIPTION": "Gain !B! Block. NL Exhaust !M! cards."
+  },
+  "reaper:StabbingDagger": {
+    "NAME": "Stabbing Dagger",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Stabs."
+  },
+  "reaper:PureDarkArts": {
+    "NAME": "Pure Dark Arts",
+    "DESCRIPTION": "Apply !M! Dark Arts. NL Apply 2 Weak."
+  },
+  "reaper:Inevitable": {
+    "NAME": "Inevitable",
+    "DESCRIPTION": "Every time you draw a card, Apply !M! Mark of Death to a random enemy."
+  },
+  "reaper:VirtuousReaper": {
+    "NAME": "Virtuous Reaper",
+    "DESCRIPTION": "Whenever an attack deals unblocked damage, apply !M! Dark_Arts."
+  },
+  "reaper:ShieldBreak": {
+    "NAME": "Shield Break",
+    "DESCRIPTION": "Remove all block from an enemy."
+  },
+  "reaper:TheFuture": {
+    "NAME": "The Future",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, Deal !D! Damage to !M! random enemies."
+  },
+  "reaper:UnknownSight": {
+    "NAME": "UnknownSight",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, Gain !B! Block."
+  },
+  "reaper:HiddenStrength": {
+    "NAME": "Hidden Strength",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, Gain !M! Strength."
+  },
+  "reaper:SlyStrike": {
+    "NAME": "Sly Strike",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, Deal !D! Damage to a random enemy."
+  },
+  "reaper:SecretRose": {
+    "NAME": "Secret Rose",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, Apply !M! Mark of Roses to a ALL enemy."
+  },
+  "reaper:SecretMagic": {
+    "NAME": "Secret Magic",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, Apply !M! Dark_Arts to a ALL enemy."
   }
 }

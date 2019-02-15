@@ -38,11 +38,7 @@ public class Cyclone extends CustomCard {
     public Cyclone() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DMG;
-        logger.info("TIMES = " + TIMES);
         magicNumber = baseMagicNumber = TIMES;
-        logger.info("TIMES2 = " + TIMES);
-        logger.info("magic# = " + magicNumber);
-
         isMultiDamage = true;
     }
 

@@ -63,5 +63,36 @@
     "NAME": "Veil of Death",
     "DESCRIPTIONS": ["Whenever you are attacked, deal ",
       " Damage to the attacker."]
+  },
+  "reaper:PureDarknessPower": {
+    "NAME": "Pure Darkness",
+    "DESCRIPTIONS": ["Apply ",
+    " Dark_Arts every time you play a card."]
+  },
+  "reaper:InevitablePower": {
+    "NAME": "InevitablePower",
+    "DESCRIPTIONS": ["Every time you draw a card, Apply ",
+    " Mark of Death to a random enemy."]
+  },
+  "reaper:DevilsStrengthPower": {
+    "NAME": "Devils Strength",
+    "DESCRIPTIONS": ["Gain ",
+      " Strength every time you only play attack cards in a turn."]
+  },
+  "reaper:DevilsDefensePower": {
+    "NAME": "Devils Strength",
+    "DESCRIPTIONS": ["Gain ",
+      " dexterity every time you only play skill cards in a turn."]
+  },
+  "reaper:CardSlashPower": {
+    "NAME": "Card Slash",
+    "DESCRIPTIONS": ["At the start of your turn, Draw ",
+      " Cards. NL Discard ",
+      " Cards"]
+  },
+  "reaper:VirtuousReaperPower": {
+    "NAME": "Virtuous Reaper",
+    "DESCRIPTIONS": ["Whenever an attack deals unblocked damage, apply ",
+      " Dark_Arts."]
   }
 }

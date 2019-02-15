@@ -2,23 +2,23 @@ package Reaper.Powers;
 
 import Reaper.Reaper;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.vfx.combat.FlashAtkImgEffect;
 
-public class DownSide extends AbstractPower {
-    private static final String POWER_ID = "reaper:DownSide";
+public class PureDarknessPower extends AbstractPower {
+    private static final String POWER_ID = "reaper:PureDarknessPower";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
 
-    public DownSide(AbstractCreature owner, int amount) {
+    public PureDarknessPower(AbstractCreature owner, int amount) {
         this.name = strings.NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -37,11 +37,13 @@ public class DownSide extends AbstractPower {
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
+    public void onUseCard(AbstractCard card, UseCardAction action) {
         flash();
-        AbstractDungeon.effectList.add(new FlashAtkImgEffect(owner.hb.cX, owner.hb.cY, AbstractGameAction.AttackEffect.NONE));
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, amount, true));
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, ID));
+        for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (!mo.isDeadOrEscaped()) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new DarkArts(mo, AbstractDungeon.player, amount), amount));
+            }
+        }
     }
 
     public void updateDescription() {
