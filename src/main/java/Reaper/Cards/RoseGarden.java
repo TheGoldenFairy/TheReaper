@@ -18,13 +18,13 @@ public class RoseGarden extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = AbstractCardEnum.COLOR_PURPLE;
 
-    private static final int COST = 2;
-    private static final int AMT = 2;
+    private static final int COST = 1;
+    private static final int AMT = 3;
     private static final int UPGRADE_AMT = 1;
 
     public RoseGarden() {

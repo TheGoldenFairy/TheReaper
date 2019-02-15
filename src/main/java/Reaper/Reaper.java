@@ -158,6 +158,7 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         BaseMod.addCard(new Illusion());
         BaseMod.addCard(new Hidden());
         BaseMod.addCard(new Stealthy());
+        BaseMod.addCard(new RoseGarden());
         //Powers
 
 
@@ -171,7 +172,6 @@ public class Reaper implements EditCardsSubscriber, EditRelicsSubscriber, EditSt
         //Skills
         BaseMod.addCard(new Blink());
         BaseMod.addCard(new FastMovement());
-        BaseMod.addCard(new RoseGarden());
         BaseMod.addCard(new ClippedWings());
         BaseMod.addCard(new MadMagic());
         BaseMod.addCard(new DeathsMark());

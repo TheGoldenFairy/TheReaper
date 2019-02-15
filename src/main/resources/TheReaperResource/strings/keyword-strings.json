@@ -17,9 +17,9 @@
     "DESCRIPTION":"At the end of your turn deal damage equal to the amount of Dark Arts and remove them."
   },
   {
-    "PROPER NAME":"dark dimension",
+    "PROPER NAME":"dark dimension",
     "NAMES": [
-      "dark dimension",
+      "dark dimension",
       "dark_dimension",
       "dark_dimensions"
     ],
