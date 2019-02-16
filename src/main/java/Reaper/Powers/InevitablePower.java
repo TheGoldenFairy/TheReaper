@@ -2,8 +2,8 @@ package Reaper.Powers;
 
 import Reaper.Reaper;
 import com.badlogic.gdx.graphics.Texture;
-import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnCardDrawPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -11,12 +11,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class InevitablePower extends AbstractPower implements OnCardDrawPower{
+public class InevitablePower extends AbstractPower {
     private static final String POWER_ID = "reaper:InevitablePower";
     private static final String IMG = "powers/BetaPower.png";
     private PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
-    private boolean DURING_TURN = false;
+    private int SKILL_AMT = 0;
 
     public InevitablePower(AbstractCreature owner, int amount) {
         this.name = strings.NAME;
@@ -37,20 +37,18 @@ public class InevitablePower extends AbstractPower implements OnCardDrawPower{
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
-        DURING_TURN = true;
+    public void atStartOfTurn() {
+        SKILL_AMT = 0;
     }
 
     @Override
-    public void onCardDraw(AbstractCard abstractCard) {
-        if (DURING_TURN) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.getRandomMonster(), AbstractDungeon.player, new MarkOfTheRose(AbstractDungeon.getRandomMonster(), amount, false), amount));
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        if (card.type == AbstractCard.CardType.SKILL) {
+            SKILL_AMT++;
+            if (SKILL_AMT == 2) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.getRandomMonster(), AbstractDungeon.player, new MarkofDeath(AbstractDungeon.getRandomMonster(), AbstractDungeon.player, amount), amount));
+            }
         }
-    }
-
-    @Override
-    public void atEndOfTurn(boolean isPlayer) {
-        DURING_TURN = false;
     }
 
     public void updateDescription() {

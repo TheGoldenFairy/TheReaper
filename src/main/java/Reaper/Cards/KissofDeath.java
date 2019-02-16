@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -42,6 +43,7 @@ public class KissofDeath extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_HEAVY"));
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, multiDamage, damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new CleaveEffect(), 0.1F));
         for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {

@@ -71,7 +71,7 @@
   },
   "reaper:InevitablePower": {
     "NAME": "InevitablePower",
-    "DESCRIPTIONS": ["Every time you draw a card, Apply ",
+    "DESCRIPTIONS": ["Every time you play 2 skill cards in a turn, Apply ",
     " Mark of Death to a random enemy."]
   },
   "reaper:DevilsStrengthPower": {

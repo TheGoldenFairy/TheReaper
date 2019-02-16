@@ -23,12 +23,12 @@ public class Inevitable extends CustomCard {
     public static final CardColor COLOR = AbstractCardEnum.COLOR_PURPLE;
 
     private static final int COST = 1;
-    private static final int DMG = 3;
-    private static final int UPGRADE_DMG = 2;
+    private static final int AMT = 1;
+    private static final int UPGRADE_AMT = 1;
 
     public Inevitable() {
         super(CARD_ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        magicNumber = baseMagicNumber = DMG;
+        magicNumber = baseMagicNumber = AMT;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Inevitable extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_DMG);
+            upgradeMagicNumber(UPGRADE_AMT);
             initializeDescription();
         }
     }

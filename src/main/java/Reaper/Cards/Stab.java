@@ -2,14 +2,17 @@ package Reaper.Cards;
 
 import Reaper.Patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
 public class Stab extends AbstractReaperCard {
     public static final String CARD_ID = "reaper:Stab";
@@ -37,7 +40,9 @@ public class Stab extends AbstractReaperCard {
 
     @Override
     public void triggerWhenDrawn() {
-        AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, AMT, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
+        AbstractCreature mo = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(AbstractDungeon.player, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+
     }
 
     @Override

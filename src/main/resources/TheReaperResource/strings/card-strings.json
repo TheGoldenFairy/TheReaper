@@ -250,7 +250,7 @@
   },
   "reaper:Stab": {
     "NAME": "Stab",
-    "DESCRIPTION": "When Drawn Deal !M! damage. NL Deal !D! damage."
+    "DESCRIPTION": "Whenever this card is drawn, Deal !M! damage. NL Deal !D! damage."
   },
   "reaper:MagicalBlock": {
     "NAME": "Magical Block",
@@ -271,7 +271,7 @@
   },
   "reaper:StabbingDagger": {
     "NAME": "Stabbing Dagger",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Stabs."
+    "DESCRIPTION": "Gain !B! Block. NL Add !M! Stabs to your hand."
   },
   "reaper:PureDarkArts": {
     "NAME": "Pure Dark Arts",
@@ -279,7 +279,7 @@
   },
   "reaper:Inevitable": {
     "NAME": "Inevitable",
-    "DESCRIPTION": "Every time you draw a card, Apply !M! Mark of Death to a random enemy."
+    "DESCRIPTION": "Every time you play 2 skill cards in a turn, Apply !M! Mark of Death to a random enemy."
   },
   "reaper:VirtuousReaper": {
     "NAME": "Virtuous Reaper",
