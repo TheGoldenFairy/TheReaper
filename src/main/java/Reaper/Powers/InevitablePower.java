@@ -43,11 +43,11 @@ public class InevitablePower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
+        AbstractCreature mo = AbstractDungeon.getRandomMonster();
         if (card.type == AbstractCard.CardType.SKILL) {
             SKILL_AMT++;
             if (SKILL_AMT == 2) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.getRandomMonster(), AbstractDungeon.player, new MarkofDeath(AbstractDungeon.getRandomMonster(), AbstractDungeon.player, amount), amount));
-            }
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mo, AbstractDungeon.player, new MarkofDeath(mo, AbstractDungeon.player, amount), amount));            }
         }
     }
 
